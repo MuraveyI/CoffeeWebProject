@@ -37,8 +37,8 @@ ul, li {
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-        font-family: 'Abril Fatface', cursive;
+h1, h2, h3, h4, h5 {
+    font-family: 'Abril Fatface', cursive;
     padding: 0;
     margin: 0;
     text-transform: uppercase;
@@ -67,6 +67,9 @@ h5 {
     font-weight: 400;
 }
 
+h6 {
+    font-weight: none;
+}
 blockquote {
     margin: 0;
 }
@@ -195,6 +198,7 @@ blockquote {
     left: 50%;
     margin-left: -10px;
     margin-top: -1px;
+    transition: all 0.4s linear;
 }
 
 .menu-btn span:before, .menu-btn span:after {
@@ -357,7 +361,7 @@ blockquote {
 
 .card-actual {
     max-width: 354px;
-    margin-top: 117px;
+    margin-top: 70px;
     background: #FFFFFF;
     box-shadow: 0px 5px 30px rgba(206, 218, 228, 0.6);
     border-radius: 2px;
@@ -380,13 +384,14 @@ blockquote {
     right: 7px;
 }
 
-.card-actual__wrapper {
+ .card-actual__wrapper {
     position: absolute;
     top: -30px;
     left: -8px;
 }
 
 .card-actual__title {
+    margin-top: 15px;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -416,8 +421,8 @@ blockquote {
 }
 
 .card-actual__overlay {
-    position: absolute;
-    width: 100%;
+     position: absolute;
+     width: 100%;
     height: 100%;
     display: flex;
     align-items: flex-end;
@@ -459,7 +464,7 @@ blockquote {
 
 /* ------ Coffee ------ */
 
-.women-area {
+.coffee-area {
     background: url('../img/aj_uni4.jpg') no-repeat right top/cover;
     height: 100%;
     width: 100%;
@@ -472,7 +477,7 @@ blockquote {
 }
 
 .quote__text {
-    font-size: 36px;
+    font-size: 46px;
     font-style: italic;
     color: #000;
     max-width: 506px;
@@ -481,7 +486,7 @@ blockquote {
 }
 
 .quote__positon {
-    font-size: 13px;
+    font-size: 18px;
     font-weight: normal;
     text-transform: uppercase;
     color: #000;
@@ -709,6 +714,40 @@ blockquote {
     font-weight: bold;
 }
 
+.model-menu {
+    margin-top: 30%;
+    height: 300px;
+    width: 300px;
+    margin-left: 50%;
+    transform: translateY(-50px);
+    background: #000;
+    z-index: 2;
+}
+
+.ul-mobile-menu {
+    margin-top: 70px;
+    align-items: center;
+}
+
+.menu__item-moblie {
+    margin-left: 50px;
+        margin-bottom: 20px;
+}
+
+.menu__link-mobile {
+    color: #fff;
+}
+
+.menu__link-mobile:hover {
+    color: green;
+}
+
+.note-active-modal-menu {
+    position: absolute;
+    transform: translateY(-200px);
+    margin-left: 0;
+    transition: 1s;
+}
 /* ------ Media Queris ------ */
 
 /* 992-1200px */
@@ -745,19 +784,6 @@ blockquote {
 }
 /* 768-992px */
 @media screen and (max-width: 992px) {
-    .mobile-menu {
-        display: block;
-    }
-    .menu-btn.menu-active span:before {
-        width: 10px;
-        transform: rotate(-45deg);
-        transform-origin: left bottom;
-    }
-    .menu-btn.menu-active span:after {
-        width: 10px;
-        transform: rotate(45deg);
-        transform-origin: left top;
-    }
     .offer {
         padding-top: 140px;
     }
@@ -780,13 +806,13 @@ blockquote {
     .people {
         margin-bottom: 30px;
     }
-    .women-area {
+    .coffee-area {
         height: 400px;
     }
     .quote {
         padding: 40px 25px 50px 45px;
     }
-    .women-area {
+    .coffee-area {
         height: 200px;
     }
     .quote__text {
@@ -799,6 +825,31 @@ blockquote {
 
 /* 320-576px */
 @media screen and (max-width: 576px) {
+    .mobile-menu {
+        display: block;
+    }
+    .menu-btn.menu-active span:before {
+        width: 10px;
+        transform: rotate(-45deg);
+        transform-origin: left bottom;
+    }
+    .menu-btn.menu-active span:after {
+        width: 10px;
+        transform: rotate(45deg);
+        transform-origin: left top;
+    }
+    /* .menu {
+        visibility: hidden;
+        opacity: 0;
+    } */
+    .menu-active {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
     .header {
         padding-bottom: 60px;
     }
@@ -894,9 +945,6 @@ blockquote {
 
 /* 320-576px */
 @media screen and (max-width: 576px) {
-    .menu {
-        display: none;
-    }
     .header1 {
         overflow:hidden;
         overflow-y:hidden;  /*для вертикального*/
@@ -917,5 +965,24 @@ blockquote {
         overflow-y:hidden;  /*для вертикального*/
         overflow-x:hidden;  /*для горизонтального*/
     }
+    .photos-wrap__img {
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
 
+/* 320-576px */
+@media screen and (max-width: 576px) {
+    .gallery {
+        margin-right: 10px;
+    }
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+    .aboutus__text {
+        margin-left: 50px;
+    }
 }

@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Главный загoловок страницы">
     <meta name="keywords" content="верстка, качественная, быстрая, современая, сайт визитка">
-    <!--Favicon -->
-    <!-- <link rel="icon" href="//COFFEEPAGE/assets/templates/wp/images/logo-footer.png" type="image/x-icon">
+    <!-- Favicon -->
+     <link rel="icon" href="//COFFEEPAGE/assets/templates/wp/images/logo-footer.png" type="image/x-icon">
     <link rel="shortcut icon" href="//wayup.in/assets/templates/wp/images/logo-footer.png" type="image/x-icon">
     <!--OG Tags -->
-    <!-- <meta property="og:title" content="Главный загoловок страницы">
+    <meta property="og:title" content="Главный загoловок страницы">
     <meta property="og:description" content='Lorem inpum'>
     <meta property="og:type" content="article">
     <meta property="og:image" content="https://wayup.in/assets/cache/images/650x527-lm31-smm.5f3.png" >
@@ -23,13 +23,37 @@
      <!-- Bootstrap Reboot CSS -->
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <!-- Jqery -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="note-active-modal-menu" id="mobile-menu">
+        <ul class="ul-mobile-menu">
+            <li class="menu__item-moblie">
+                <a href="index.html" class="menu__link-mobile">
+                    Main
+                </a>
+            </li>
+            <li class="menu__item-moblie">
+                <a href="aboutcoffee.html" target="_blank" class="menu__link-mobile">
+                    About Coffee
+                </a>
+            </li>
+            <li class="menu__item-moblie">
+                <a href="gallery.html" target="_blank" class="menu__link-mobile">
+                    Gallery
+                </a>
+            </li>
+            <li class="menu__item-moblie">
+                <a href="aboutus.html" class="menu__link-mobile">
+                    About Us
+                </a>
+            </li>
+        </ul>
+    </div>
     <header class="header" id="header">
         <div class="container">
             <div class="row align-items-center">
@@ -350,18 +374,18 @@
         </div>
     </section>
     <!-- Coffee -->
-    <section class="women" id="women">
+    <section class="coffee" id="coffee">
         <div class="container-fluid container-fluid_plain">
             <div class="row no-gutters">
                 <div class="col-lg-6">
-                    <div class="women-area"></div>
+                    <div class="coffee-area"></div>
                 </div>
                 <div class="col-lg-6">
                     <blockquote class="quote">
-                        <p class="quote__text">
+                        <h6 class="quote__text">
                             “If coffee is poison, it is extremely slow acting,
                             since I myself have been dying from it for more than half a century.”
-                        </p>
+                        </h6>
                         <cite class="quote__positon">
                             - Voltaire
                         </cite>
@@ -442,6 +466,7 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="js/main.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
