@@ -2,7 +2,7 @@
 #### This site was created for *coffee lovers* and for those who like quality and beautiful content.
 
 ## Usage
-##### Bootstrap, JQery
+##### Bootstrap,jquery
 
 
 ### Links to the Coffee Page
