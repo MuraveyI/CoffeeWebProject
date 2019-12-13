@@ -12,3 +12,4 @@
 >Don’t take coffee breaks, live a coffee life, that is occasionally interrupted nonsense.
 
 ![COFFEPAGE](https://github.com/MuraveyI/CoffeeWebProject/blob/master/img/screen1.png)
+![COFFEPAGE](https://github.com/MuraveyI/CoffeeWebProject/blob/master/img/screen2.png)
